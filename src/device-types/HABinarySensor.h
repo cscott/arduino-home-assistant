@@ -55,6 +55,15 @@ public:
         { _class = deviceClass; }
 
     /**
+     * Sets state class of the device.
+     * You can find list of available values here: https://developers.home-assistant.io/docs/core/entity/sensor/#available-state-classes
+     *
+     * @param stateClass The state class name.
+     */
+    inline void setStateClass(const char* stateClass)
+        { _stateClass = stateClass; }
+
+    /**
      * Sets icon of the sensor.
      * Any icon from MaterialDesignIcons.com (for example: `mdi:home`).
      *
@@ -78,6 +87,9 @@ private:
 
     /// The device class. It can be nullptr.
     const char* _class;
+
+    /// The state class. It can be nullptr.
+    const char* _stateClass;
 
     /// The icon of the sensor. It can be nullptr.
     const char* _icon;

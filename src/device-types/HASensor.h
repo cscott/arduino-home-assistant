@@ -42,10 +42,10 @@ public:
         { _deviceClass = deviceClass; }
 
     /**
-     * Sets state of the device.
+     * Sets state class of the device.
      * You can find list of available values here: https://developers.home-assistant.io/docs/core/entity/sensor/#available-state-classes
      *
-     * @param stateClass The class name.
+     * @param stateClass The state class name.
      */
     inline void setStateClass(const char* stateClass)
         { _stateClass = stateClass; }
